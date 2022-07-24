@@ -1,5 +1,5 @@
 
-###things
+### things
 execute if score level.up.random Settings matches 2..3 run function gg:random/start
 execute if score level.up.random Settings matches 3 run scoreboard players operation @s level = out random
 execute if score level.up.random Settings matches 2 run scoreboard players operation @s level += out random

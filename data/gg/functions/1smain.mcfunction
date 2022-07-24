@@ -12,4 +12,5 @@ execute as @a unless score @s ggs.levelrecord matches -2147483648..2147483647 ru
 experience set @a 0 points
 #end
 
+#repeat it self for the 1s clock
 schedule function gg:1smain 1s

@@ -22,6 +22,9 @@ difficulty peaceful
 
 # adventure
 gamemode adventure @a[gamemode=!creative]
+defaultgamemode adventure
 #end
 
-defaultgamemode adventure
+# default sidebar
+scoreboard objectives setdisplay sidebar ggs.level
+#end

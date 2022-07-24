@@ -14,6 +14,12 @@ scoreboard objectives remove level.kills
 scoreboard objectives remove changelevelto
 scoreboard objectives remove random
 scoreboard objectives remove health
+
+scoreboard objectives remove ggs.deaths
+scoreboard objectives remove ggs.killbyplayer
+scoreboard objectives remove ggs.kills
+scoreboard objectives remove ggs.level
+scoreboard objectives remove ggs.levelrecord
 #end
 
 #removing all teams

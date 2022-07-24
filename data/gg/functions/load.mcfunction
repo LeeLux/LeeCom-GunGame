@@ -1,15 +1,11 @@
 
-# trying to gg:firstload
-execute unless entity @e[type=marker,tag=firstload] run function gg:firstload
-execute unless entity @e[type=marker,tag=firstload] run summon marker 0 500 0 {Tags: ["firstload"]}
-
 # creating scoreboards
 scoreboard objectives add deaths deathCount
 scoreboard objectives add kills playerKillCount
-scoreboard objectives add level dummy [{"nbt":"Prefix","storage":"minecraft:gungame","interpret":true},{"text":"Level"}]
+scoreboard objectives add level dummy [{"text": "[","color": "green"},{"text":"Level","color": "red"},{"text": "]","color": "green"}]
 scoreboard objectives add DeathTime dummy
 scoreboard objectives add level.death deathCount
-scoreboard objectives add Settings dummy
+scoreboard objectives add Settings dummy [{"text": "[","color": "dark_red"},{"text":"Level record","color": "red"},{"text": "]","color": "dark_red"}]
 scoreboard objectives add freezTime dummy
 scoreboard objectives add level.kills playerKillCount
 scoreboard objectives add changelevelto dummy
@@ -17,11 +13,25 @@ scoreboard objectives add random dummy
 scoreboard objectives add health health {"text":"❤","color":"green"}
 scoreboard objectives setdisplay belowName health
 scoreboard objectives add expbar level
-#stats
-scoreboard objectives add ggs.deaths deathCount
-scoreboard objectives add ggs.kills playerKillCount
-scoreboard objectives add ggs.killbyplayer killed_by:player
-scoreboard objectives add ggs.levelrecord dummy [{"nbt":"Prefix","storage":"minecraft:gungame","interpret":true},{"text":"Levelrecord"}]
+# stats
+scoreboard objectives add ggs.level dummy [{"text": "[","color": "blue"},{"text":"Level","color": "red"},{"text": "]","color": "blue"}]
+scoreboard objectives add ggs.deaths deathCount [{"text": "[","color": "blue"},{"text":"Deaths","color": "red"},{"text": "]","color": "greblueen"}]
+scoreboard objectives add ggs.kills playerKillCount [{"text": "[","color": "blue"},{"text":"Kills","color": "red"},{"text": "]","color": "blue"}]
+scoreboard objectives add ggs.killbyplayer killed_by:player [{"text": "[","color": "blue"},{"text":"Killed by a player","color": "red"},{"text": "]","color": "blue"}]
+scoreboard objectives add ggs.levelrecord dummy [{"text": "[","color": "blue"},{"text":"Level record","color": "red"},{"text": "]","color": "blue"}]
+# trigger
+scoreboard objectives add GG.level trigger
+scoreboard objectives add GG.deaths trigger
+scoreboard objectives add GG.kills trigger
+scoreboard objectives add GG.killedByPlaye trigger
+scoreboard objectives add GG.levelRecord trigger
+scoreboard objectives add GG.empty trigger
+scoreboard objectives add GG.settings trigger
+#end
+
+# trying to gg:firstload
+execute unless entity @e[type=marker,tag=firstload] run function gg:firstload
+execute unless entity @e[type=marker,tag=firstload] run summon marker 0 500 0 {Tags: ["firstload"]}
 #end
 
 # setting constand numbers

@@ -54,6 +54,11 @@ execute as @a[scores={kills=1..}] at @s run function gg:level_up
 team join gg.player @a
 #end
 
+# set ggs.level
+scoreboard players reset * ggs.level
+execute as @a run scoreboard players operation @s ggs.level = @s level
+#end
+
 # take all recipies to dont allow any player to craft
 recipe take @a *
 #end
@@ -67,5 +72,25 @@ execute if score out random matches ..0 run scoreboard players operation out ran
 #end
 
 # how many online players?
+#??? IDK what i wanted to do here???
+#end
 
+# enable triggers for everyone
+scoreboard players enable @a GG.deaths
+scoreboard players enable @a GG.killedByPlaye
+scoreboard players enable @a GG.kills
+scoreboard players enable @a GG.level
+scoreboard players enable @a GG.levelRecord
+scoreboard players enable @a GG.empty
+scoreboard players enable @a GG.settings
+#end
+
+# handel triggers
+execute as @a[scores={GG.deaths=1..}] run function gg:update_scoreboard
+execute as @a[scores={GG.empty=1..}] run function gg:update_scoreboard
+execute as @a[scores={GG.killedByPlaye=1..}] run function gg:update_scoreboard
+execute as @a[scores={GG.kills=1..}] run function gg:update_scoreboard
+execute as @a[scores={GG.level=1..}] run function gg:update_scoreboard
+execute as @a[scores={GG.levelRecord=1..}] run function gg:update_scoreboard
+execute as @a[scores={GG.settings=1..}] run function gg:update_scoreboard
 #end
