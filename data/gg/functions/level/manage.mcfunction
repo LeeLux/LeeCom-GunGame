@@ -1,0 +1,73 @@
+#give the player level 1 stuff if the level is higher then the max level (just temp)
+execute unless score @s level matches 1..100 run function gg:level/66
+#end
+
+
+#calling the function who gives the items and stuff...depending on the level of the player
+execute if score @s level matches 1 run function gg:level/1
+execute if score @s level matches 2 run function gg:level/2
+execute if score @s level matches 3 run function gg:level/3
+execute if score @s level matches 4 run function gg:level/4
+execute if score @s level matches 5 run function gg:level/5
+execute if score @s level matches 6 run function gg:level/6
+execute if score @s level matches 7 run function gg:level/7
+execute if score @s level matches 8 run function gg:level/8
+execute if score @s level matches 9 run function gg:level/9
+execute if score @s level matches 10 run function gg:level/10
+execute if score @s level matches 11 run function gg:level/11
+execute if score @s level matches 12 run function gg:level/12
+execute if score @s level matches 13 run function gg:level/13
+execute if score @s level matches 14 run function gg:level/14
+execute if score @s level matches 15 run function gg:level/15
+execute if score @s level matches 16 run function gg:level/16
+execute if score @s level matches 17 run function gg:level/17
+execute if score @s level matches 18 run function gg:level/18
+execute if score @s level matches 19 run function gg:level/19
+execute if score @s level matches 20 run function gg:level/20
+execute if score @s level matches 21 run function gg:level/21
+execute if score @s level matches 22 run function gg:level/22
+execute if score @s level matches 23 run function gg:level/23
+execute if score @s level matches 24 run function gg:level/24
+execute if score @s level matches 25 run function gg:level/25
+execute if score @s level matches 26 run function gg:level/26
+execute if score @s level matches 27 run function gg:level/27
+execute if score @s level matches 28 run function gg:level/28
+execute if score @s level matches 29 run function gg:level/29
+execute if score @s level matches 30 run function gg:level/30
+execute if score @s level matches 31 run function gg:level/31
+execute if score @s level matches 32 run function gg:level/32
+execute if score @s level matches 33 run function gg:level/33
+execute if score @s level matches 34 run function gg:level/34
+execute if score @s level matches 35 run function gg:level/35
+execute if score @s level matches 36 run function gg:level/36
+execute if score @s level matches 37 run function gg:level/37
+execute if score @s level matches 38 run function gg:level/38
+execute if score @s level matches 39 run function gg:level/39
+execute if score @s level matches 40 run function gg:level/40
+execute if score @s level matches 41 run function gg:level/41
+execute if score @s level matches 42 run function gg:level/42
+execute if score @s level matches 43 run function gg:level/43
+execute if score @s level matches 44 run function gg:level/44
+execute if score @s level matches 45 run function gg:level/45
+execute if score @s level matches 46 run function gg:level/46
+execute if score @s level matches 47 run function gg:level/47
+execute if score @s level matches 48 run function gg:level/48
+execute if score @s level matches 49 run function gg:level/49
+execute if score @s level matches 50 run function gg:level/50
+execute if score @s level matches 51 run function gg:level/51
+execute if score @s level matches 52 run function gg:level/52
+execute if score @s level matches 53 run function gg:level/53
+execute if score @s level matches 54 run function gg:level/54
+execute if score @s level matches 55 run function gg:level/55
+execute if score @s level matches 56 run function gg:level/56
+execute if score @s level matches 57 run function gg:level/57
+execute if score @s level matches 58 run function gg:level/58
+execute if score @s level matches 59 run function gg:level/59
+execute if score @s level matches 60 run function gg:level/60
+execute if score @s level matches 61 run function gg:level/61
+execute if score @s level matches 62 run function gg:level/62
+execute if score @s level matches 63 run function gg:level/63
+execute if score @s level matches 64 run function gg:level/64
+execute if score @s level matches 65 run function gg:level/65
+execute if score @s level matches 66 run function gg:level/66
+#end
