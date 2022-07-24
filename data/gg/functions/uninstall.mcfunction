@@ -1,5 +1,5 @@
 #message
-tellraw @a [{"nbt":"Prefix","storage":"minecraft:gungame","interpret":true},{"text": "Datapack uninstalled! (you can now remove it drom the word!)"}]
+tellraw @a [{"nbt":"Prefix","storage":"minecraft:gungame","interpret":true},{"text": "Datapack uninstalled! (you can now remove it from the word folder!)"}]
 #end
 
 #uninstall all scoreboards
