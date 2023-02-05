@@ -3,13 +3,12 @@
 execute as @a if score @s ggs.levelrecord < @s level run scoreboard players operation @s ggs.levelrecord = @s level
 #end
 
-#set stats to 0 if the number is not between -2147483648 and 2147483647
-execute as @a unless score @s level matches -2147483648..2147483647 run scoreboard players set @s level 0
-execute as @a unless score @s ggs.levelrecord matches -2147483648..2147483647 run scoreboard players set @s ggs.levelrecord 0
-#end
-
 #no ex points
 experience set @a 0 points
+#end
+
+# regen in spawn
+effect give @a[tag=gg.spawn] minecraft:regeneration 3 0 true 
 #end
 
 #repeat it self for the 1s clock

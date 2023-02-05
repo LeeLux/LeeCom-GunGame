@@ -70,4 +70,5 @@ execute if score @s level matches 63 run function gg:level/63
 execute if score @s level matches 64 run function gg:level/64
 execute if score @s level matches 65 run function gg:level/65
 execute if score @s level matches 66 run function gg:level/66
+execute if score @s level matches 67 run function gg:level/67
 #end
