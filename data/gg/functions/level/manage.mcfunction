@@ -1,8 +1,3 @@
-#give the player level 1 stuff if the level is higher then the max level (just temp)
-execute unless score @s level matches 1..100 run function gg:level/66
-#end
-
-
 #calling the function who gives the items and stuff...depending on the level of the player
 execute if score @s level matches 1 run function gg:level/1
 execute if score @s level matches 2 run function gg:level/2
@@ -70,5 +65,6 @@ execute if score @s level matches 63 run function gg:level/63
 execute if score @s level matches 64 run function gg:level/64
 execute if score @s level matches 65 run function gg:level/65
 execute if score @s level matches 66 run function gg:level/66
-execute if score @s level matches 67 run function gg:level/67
+
+execute if score @s level matches 67.. run function gg:level/66
 #end
